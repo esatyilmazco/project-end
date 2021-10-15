@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fluent-demo-k8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fluent-demo-k8s
+  template:
+    metadata:
+      labels:
+        app: fluent-demo-k8s
+    spec:
+      containers:
+      - name: fluent-demo-k8s
+        imagePullPolicy: Always
+        image: appsvc/dotnetcore
+        ports:
+        - containerPort: 8080
