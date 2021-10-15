@@ -1,3 +1,5 @@
+note= we installed it via kubernetes cluster in aws.
+
 Step 1: Install Docker
 Step 2: Install Kubectl
 Step 3: Install Go
