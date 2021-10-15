@@ -7,13 +7,17 @@ elasticConnect = Elasticsearch([{'host': '18.156.199.93', 'port': 9200}])
 #pull value from user
 findValue=input("which label in logs do you want?")
 
+#example usage=findValue=kibana-efk(value entered in the input)
+#which label in logs do you want?kibana-efk
+#@log_name=kibana-efk 
+
 def ElasticManagerApp(): 
     contentQuery = {
         "query": {
             "match": {
                 #will search by entered value
                 #filterer by @log_name
-                "@log_name": findValue 
+                "@log_name": findValue          
             }
         }
     }
