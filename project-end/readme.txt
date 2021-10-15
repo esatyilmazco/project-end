@@ -17,7 +17,7 @@ Step 8: Try Your Cluster
 5. export PATH=$PATH:/home/ubuntu/go/bin
 6. kind create cluster
 -----------------------------------------------------------------------------------------------------------
-Aşağıdaki dosyaları sırasıyla oluşturun ve içeriğini ekleyin.
+Create and add the following files in order.
 7.docker-compose.yml create
 8.fluent-usage/Dockerfile create Dockerfile
 9.fluent/configuration/fluentfile.conf
